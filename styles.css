@@ -9,6 +9,9 @@ body, html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+.display-value {
+    text-align: center;
+}
 
 .form-container {
     margin: 2rem;
