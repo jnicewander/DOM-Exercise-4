@@ -33,7 +33,7 @@ body, html {
     line-height: 8rem;
 }
 
-.dime {
+.dime, .penny{
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
@@ -47,7 +47,4 @@ body, html {
 
 .penny {
     background-color: brown;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
 }
