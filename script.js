@@ -6,6 +6,10 @@ const coins = {
     incrementCoins(number, coin) {
         coins[coin] += parseInt(number);
         console.log(coins);
+    },
+    decrementCoins(coin) {
+        coins[coin] -= 1;
+        console.log(coins);
     }
 }
 
@@ -28,5 +32,6 @@ document.getElementById('form').addEventListener('submit', event => {
 document.getElementById('coinDisplay').addEventListener('click', event => {
     if(event.target !== event.currentTarget) {
         event.target.parentNode.removeChild(event.target);
+        coins.decrementCoins(event.target.classList[1]);
     }
 });
