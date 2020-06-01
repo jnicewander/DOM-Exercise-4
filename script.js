@@ -41,7 +41,9 @@ function decrementCoins(coin) {
 
 
 const number = () => document.getElementById('number').value;
-const coin = () => document.getElementById('coin').value;
+// SELECT INPUT
+// const coin = () => document.getElementById('coin').value;
+const coin = () => document.querySelector('input[name="denomination"]:checked').value;
 
 function displayCoins(number, coin) {
     const coinDisplay = document.getElementById('coinDisplay');
